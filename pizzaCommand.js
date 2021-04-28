@@ -10,8 +10,7 @@ module.exports = {
         .setColor('ORANGE')
         .setTitle('Do you consent to us to using your address for conventional purposes?')
         .setDescription('we **will not** use your address or other personal information for **any** malicious intent')
-        .addField({name: 'this is legaly a verbal agreement.', value: 'if we do use your information for malicious intent, you are allowed to press charges'})
-        .setFooter('text: "yes" or "no"'); 
+        .setFooter('message: "yes" or "no"'); 
         message.channel.send(leagalEmbed); 
         let YorN = await message.channel.awaitMessages(u2 => u2.author.id === message.author.id, { time: x*30, max: 1, errors: ["time"]});
 
